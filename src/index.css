@@ -337,6 +337,7 @@ justify-content: center;
 .container-protection{
   max-width: 1200px;
   width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -841,9 +842,13 @@ background-color: rgb(8, 135, 255);}
   .fourth-container,
   .fifth-container,
   .footer,
-  .frequent-container {
+  .frequent-container,.container-protection {
     flex-direction: column;
     height: auto;
+  }
+  .container-protection{
+
+    flex-direction: column-reverse;
   }
 
   .Second-container .second-info h2,
@@ -894,6 +899,14 @@ background-color: rgb(8, 135, 255);}
   .Email-input {
     width: auto;
   }
+  .form-infoo{
+    width: 80%;
+  }
+  .form-infoo h2{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
 
   .frequent-container h1 {
     width: 90%;
@@ -906,4 +919,37 @@ width: 90vw;
   .pair-cont {
     width: 90%;
   }
+}
+@media screen and (max-width:545px) {
+.nav-div{
+  font-size: 9px;
+}
+.Search-container h1{
+  font-size: 20px;
+  padding: 5px 0px;
+border: 2px solid rgb(27, 110, 244);
+}
+.social h1 {
+  margin: 0 0 1rem;
+    text-align: center;
+    width: 60%;
+    padding: 0% 10%;
+    font-size: 20px;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid rgb(27, 110, 244);
+}
+.social{
+  padding: 0% 10% 0% 0%;
+  margin-bottom: 10px;
+}
+.fa{
+  padding: 0.5rem;
+}
+.video-container h1 {
+  font-size: 1rem;
+}
+.Auth-container .headder h1{
+  font-size: 30px;
+}
 }
