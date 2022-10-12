@@ -31,7 +31,6 @@ const Footer = () => {
         <option>English</option>
         <option>Hindi</option>
       </select>
-      <p>Netflix India</p>
     </div>
   );
 };

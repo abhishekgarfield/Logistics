@@ -9,7 +9,7 @@ const Homepage = () => {
     Name: "",
     Mobile_no: "",
     Email_id: "",
-    Comment : "",
+    Comment: "",
   });
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -36,52 +36,116 @@ const Homepage = () => {
       <div className="Auth-container">
         <div className="First-Container">
           <div className="Search-container">
-            <h1>Unlimited movies, TV shows and more.</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
-            <h3>Enquire now ?</h3>
-            <div
-              className="Email-input"
-              onFocus={(e) => {
-                document.querySelector(".label").style.top = "2px";
-                document.querySelector(".label").style.fontSize = "12px";
-              }}
-            >
-              <input type="text" />
-              <div className="label">
-                <label>Email address</label>
+            <h1>Orchestrating every element of supply chain and mobility</h1>
+            <div class="social">
+                <h1>Our socials</h1>
+              <div class="conta">
+                <a
+                  href="https://www.instagram.com/garfield_abhishek/"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/garfield.abhisek/"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/abhishek2759" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.snapchat.com/add/abhishek-1859?share_id=QTcwQkIxNzYtQjQ2QS00MjRFLThFREMtOUI1Mzc5NjE3M0NE&locale=en_IN"
+                  target="_blank"
+                >
+                  <i class="fa fa-snapchat-ghost"></i>
+                </a>
+                <a
+                  href="https://join.skype.com/invite/utyDdKtYAu7z"
+                  target="_blank"
+                >
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UC8JrfmyjjWwOFrpGu0xlpmA"
+                  target="_blank"
+                >
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a
+                  href="https://stackoverflow.com/users/19411888/abhishek-sharma"
+                  target="_blank"
+                >
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/abhishekgarfield" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/abhishek-sharma-902a9b193/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
               </div>
-              <input type="button" value="Get Startted" />
             </div>
           </div>
         </div>
         <hr />
+        <div className="headder">
+          <h1>Our services</h1>
+        </div>
         <div className="Second-container">
           <div className="second-info">
-            <h1>Enjoy on your TV.</h1>
-            <h2>
-              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
-              Blu-ray players and more.
+            <h1>End to End logistics</h1>
+            <h2 style={{ paddingRight: 30 }}>
+              Transpoting your employess with tech based solutions
             </h2>
           </div>
           <div className="second-img">
             <div className="image-container">
               <img
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                src="https://mahindralogistics.com/wp-content/uploads/2022/06/home-page-solutions-we-provide-supply-chain-management.jpg"
                 alt="tv"
               />
               <div className="video-container">
-                <video autoPlay loop muted>
-                  <source
-                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
-                    type="video/mp4"
-                  />
-                </video>
+                <h1>End to End logistics</h1>
+                <i
+                  className=" fa fa-long-arrow-right"
+                  style={{ fontSize: 40, transition: "0.5s all" }}
+                ></i>
               </div>
             </div>
           </div>
         </div>
-        <hr />
+
+        <div className="fourth-container">
+          <div className="second-info">
+            <h1 style={{ paddingLeft: 30 }}>Express distribution</h1>
+            <h2 style={{ paddingLeft: 30 }}>
+              Seamless logistics solutions for big buisnesses
+            </h2>
+          </div>
+          <div className="second-img">
+            <div className="image-container">
+              <img
+                src="https://mahindralogistics.com/wp-content/uploads/2021/06/solution_2.jpg"
+                alt="tv"
+              />
+              <div className="video-container">
+                <h1>Express distribution</h1>
+                <i
+                  className="fa fa-long-arrow-right"
+                  style={{ fontSize: 40, transition: "0.5s all" }}
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="Third-container">
+            <div className="container-protection">
           <div className="authmodal-inner-cont">
             <h1>Enquire now ?</h1>
             <input
@@ -113,55 +177,16 @@ const Homepage = () => {
               onChange={(e) => handleChange(e)}
             />
 
-            
             <div className="submit-container" onClick={handleSubmit}>
               <div className="vutton"> Send query</div>
             </div>
           </div>
-        </div>
-        <hr />
-        <div className="fourth-container">
-          <div className="second-info">
-            <h1>Watch everywhere.</h1>
-            <h2>
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV.
-            </h2>
+          <div className="form-infoo">
+          <h2>You have doubts feel free to send your query !</h2>
           </div>
-          <div className="second-img">
-            <div className="image-container">
-              <img
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
-                alt="tv"
-              />
-              <div className="video-container">
-                <video autoPlay loop muted>
-                  <source
-                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div>
           </div>
         </div>
         <hr />
-        <div className="fifth-container">
-          <div className="second-img">
-            <div className="image-container">
-              <img
-                src="https://occ.a.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420"
-                alt="tv"
-              />
-            </div>
-          </div>
-          <div className="second-info">
-            <h1>Download your shows to watch offline.</h1>
-            <h2>
-              Save your favourites easily and always have something to watch.
-            </h2>
-          </div>
-        </div>
         <hr />
         <Frequent />
         <hr />
