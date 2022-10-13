@@ -12,14 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h1{
+
+h1 {
   opacity: 0;
   transition: 0.8s all;
 }
 
 /* --------------- Homepage ---------------*/
 
-.homepage-container{
+.homepage-container {
   display: flex;
   flex-direction: column;
 }
@@ -45,7 +46,7 @@ h1{
   flex-direction: column;
   z-index: 20;
   padding: 15px 2px 15px 2px;
-  
+
 }
 
 
@@ -66,12 +67,15 @@ h1{
   flex-direction: row;
   align-items: center;
 }
-.nav-left img:hover{
-cursor: pointer;
+
+.nav-left img:hover {
+  cursor: pointer;
 }
-.nav-left img{
+
+.nav-left img {
   padding-right: 10px;
 }
+
 .nav-div {
   padding: 3px;
   font-size: 20px;
@@ -104,16 +108,69 @@ cursor: pointer;
 
 .First-Container {
   position: relative;
-  background-color:white;
+  background-color: white;
   display: flex;
-  background: linear-gradient(rgba(48, 47, 47, 0.861), rgba(151, 150, 150, 0.63), rgb(46, 45, 45)), url("https://i.imgur.com/yQzdoec.jpg");
+  background: linear-gradient(rgba(48, 47, 47, 0.861), rgba(86, 85, 85, 0.63), rgb(46, 45, 45)), url("https://i.imgur.com/e5IlvKB.jpg");
   flex-direction: column;
   background-position: bottom;
   background-attachment: scroll;
-  background-size: 100vw 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
   justify-content: center;
+}
+
+.core-values {
+  display: flex;
+  flex-direction: row;
+}
+
+.coreValues h3 {
+  font-size: 50px !important;
+  font-weight: 700 !important;
+  display: flex;
+  align-self: flex-start;
+
+  color: aliceblue;
+  border-bottom: 7px solid rgb(27, 110, 244);
+  padding: 10px 0px;
+  text-align: center;
+  margin: 7rem auto 1rem auto;
+}
+
+.coreValues {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem 0rem 2rem 0rem;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.corevalues-row1 {
+  display: flex;
+  flex: 0 0 50%;
+  transition: 0.7s all;
+  font-size: 18px;
+  font-weight: 500;
+  visibility: hidden;
+  transform: translateX(-20%);
+  padding: 10px;
+  color: aliceblue;
+  flex-direction: column;
+
+}
+
+.corevalues-row2 {
+  display: flex;
+  padding: 10px;
+  font-size: 18px;
+  visibility: hidden;
+  flex: 0 0 50%;
+  transform: translateX(20%);
+  font-weight: 500;
+  transition: 0.7s all;
+  color: aliceblue;
+  flex-direction: column;
 }
 
 .Header {
@@ -137,10 +194,10 @@ cursor: pointer;
   font-weight: 500;
   background-color: rgba(0, 0, 0, 0.608);
   border-radius: 3px;
- color: rgb(8, 75, 245);
+  color: rgb(8, 75, 245);
 }
 
-.Header input{
+.Header input {
   padding: 7px 15px 7px 15px;
   margin-right: 10px;
   font-size: 15px;
@@ -148,11 +205,12 @@ cursor: pointer;
   background-color: rgba(229, 9, 20, 255);
   border-radius: 3px;
   border: 0px;
- color: rgb(8, 75, 245);
+  color: rgb(8, 75, 245);
   transition: 0.3s all;
 }
-.Header input:hover{
-cursor: pointer;
+
+.Header input:hover {
+  cursor: pointer;
 }
 
 .Header-image {
@@ -166,8 +224,9 @@ cursor: pointer;
 }
 
 .Search-container {
- color: rgb(8, 75, 245);
+  color: rgb(8, 75, 245);
   display: flex;
+
   padding: 10px;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +249,7 @@ cursor: pointer;
   border: 7px solid rgb(27, 110, 244);
   padding: 10px 0px;
   text-align: center;
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 5rem 0rem 1rem 0rem;
 }
 
 .Search-container h2 {
@@ -220,7 +279,7 @@ cursor: pointer;
   padding: 15px;
   background-color: rgba(229, 9, 20, 255);
   ;
- color: rgb(8, 75, 245);
+  color: rgb(8, 75, 245);
   border: none;
   font-size: 22px;
   margin-left: 1px;
@@ -244,10 +303,11 @@ cursor: pointer;
   top: 2px;
   font-size: 12px;
 }
+
 /* ------------ Second-container ---------------- */
 
 .Second-container {
-  background-color:white;
+  background-color: white;
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -305,15 +365,16 @@ cursor: pointer;
   height: 20%;
   text-align: left;
 
- 
-  
+
+
   color: white;
   width: 100%;
   z-index: 10;
 }
-.video-container h1{
+
+.video-container h1 {
   margin: 0rem 2rem;
-  
+
 }
 
 video {
@@ -332,11 +393,12 @@ video {
   width: 100%;
   flex-direction: row-reverse;
   margin-bottom: 0.5rem;
-justify-content: center;
+  justify-content: center;
 
   margin: 0rem auto 0rem auto;
 }
-.container-protection{
+
+.container-protection {
   max-width: 1200px;
   width: 100%;
   align-items: center;
@@ -344,21 +406,23 @@ justify-content: center;
   flex-direction: row-reverse;
   justify-content: center;
 }
-.form-infoo{
+
+.form-infoo {
   display: flex;
   align-items: center;
   flex: 0 0 50%;
   justify-content: center;
 }
-.form-infoo h2{
+
+.form-infoo h2 {
   font-size: 40px;
-    text-align: left;
-    color: aliceblue;
-    padding-bottom: 10px;
-    margin: 0rem 0rem 1rem 0rem;
+  text-align: left;
+  color: aliceblue;
+  padding-bottom: 10px;
+  margin: 0rem 0rem 1rem 0rem;
 }
 
-.Third-container form{
+.Third-container form {
   display: flex;
   flex-direction: column;
 }
@@ -366,7 +430,7 @@ justify-content: center;
 /* ------------------ 4th container -------------- */
 
 .fourth-container {
-  background-color:white;
+  background-color: white;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -383,10 +447,12 @@ justify-content: center;
   transition: 0.7s all;
   transition-delay: 0.2s;
 }
-.second-img:hover img{
+
+.second-img:hover img {
   transform: scale(1.1);
 }
-.second-img:hover .video-container i{
+
+.second-img:hover .video-container i {
   transform: scaleX(1.5);
 }
 
@@ -417,7 +483,7 @@ justify-content: center;
 /* ------------------ 5th container -------------- */
 
 .fifth-container {
-  background-color:white;
+  background-color: white;
   display: flex;
   flex-direction: row;
   height: 70vh;
@@ -459,7 +525,7 @@ justify-content: center;
 
 .frequent-container {
 
-  background-color:white;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,7 +534,7 @@ justify-content: center;
 
 .pair-cont {
   display: flex;
-  
+
   width: 60%;
   margin: 0.5rem 0rem 0.5rem 0rem;
   flex-direction: column;
@@ -511,7 +577,7 @@ justify-content: center;
   padding: 15px;
   background-color: rgba(229, 9, 20, 255);
   ;
- color: rgb(8, 75, 245);
+  color: rgb(8, 75, 245);
   border: none;
   font-size: 22px;
   margin-left: 1px;
@@ -546,7 +612,7 @@ justify-content: center;
 }
 
 .footer {
-  background-color:white;
+  background-color: white;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -605,8 +671,7 @@ li {
 
 
 /* -------------- authmodal ------------ */
-.authmodal-main-cont
-{
+.authmodal-main-cont {
   display: flex;
   position: relative;
   height: 100vh;
@@ -614,41 +679,45 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background:linear-gradient(rgba(0, 0, 0, 0.694),rgba(0, 0, 0, 0.623)), url("https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/c6e22290-98e5-4eee-b72d-47156e4893fc/IN-en-20220926-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.623)), url("https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/c6e22290-98e5-4eee-b72d-47156e4893fc/IN-en-20220926-popsignuptwoweeks-perspective_alpha_website_large.jpg");
 }
-.authmodal-inner-cont{
+
+.authmodal-inner-cont {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-border-radius: 5px;
+  border-radius: 5px;
   width: 40vw;
   margin: 2rem auto 4rem auto;
   color: black;
   background-color: rgba(0, 0, 0, 0.716);
 }
-.authmodal-inner-cont input{
+
+.authmodal-inner-cont input {
   width: 70%;
   padding: 17px;
   font-size: 15px;
-  background-color: rgb(51,51,51);
+  background-color: rgb(51, 51, 51);
   border: none;
- color: rgb(8, 75, 245);
+  color: rgb(8, 75, 245);
   outline: none;
-  margin: 15px 0px 0px 0px ;
+  margin: 15px 0px 0px 0px;
   border-radius: 5px;
 
 }
-.authmodal-inner-cont h1{
- color: rgb(8, 75, 245);
+
+.authmodal-inner-cont h1 {
+  color: rgb(8, 75, 245);
   font-weight: 700;
   margin-top: 30px;
   width: 76%;
   font-size: 37px;
 }
-.authmodal-inner-cont .vutton{
+
+.authmodal-inner-cont .vutton {
   text-align: center;
- color: white;
+  color: white;
   font-size: 20px;
   font-weight: 700;
   outline: none;
@@ -656,39 +725,46 @@ border-radius: 5px;
   border-radius: 5px;
   transition: 0.2s all;
 }
-.authmodal-inner-cont .submit-container:hover{
+
+.authmodal-inner-cont .submit-container:hover {
   cursor: pointer;
-background-color: rgb(8, 135, 255);}
-.authmodal-inner-cont p{
+  background-color: rgb(8, 135, 255);
+}
+
+.authmodal-inner-cont p {
   color: #737373;
   margin-top: 40px;
   width: 72%;
 }
-.authmodal-inner-cont p span{
- color: rgb(8, 75, 245);
+
+.authmodal-inner-cont p span {
+  color: rgb(8, 75, 245);
   font-size: 17px;
-  
+
 }
-.authmodal-inner-cont p span:hover{
+
+.authmodal-inner-cont p span:hover {
   text-decoration: dashed;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.646);
 }
-.authmodal-main-cont img{
+
+.authmodal-main-cont img {
   width: 150px;
   display: block;
   position: absolute;
   top: 30px;
   left: 50px;
 }
-.submit-container{
+
+.submit-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
   text-align: center;
   background-color: rgb(8, 75, 245);
- color: white;
+  color: white;
   font-size: 16px;
   font-weight: 700;
   outline: none;
@@ -698,21 +774,25 @@ background-color: rgb(8, 135, 255);}
   width: 70%;
   transition: 0.2s all;
 }
-.submit-container h1{
+
+.submit-container h1 {
   color: white;
 }
-.headder{
+
+.headder {
   display: flex;
   justify-content: center;
 }
-.Auth-container  .headder h1{
+
+.Auth-container .headder h1 {
   padding: 10px;
   text-align: center;
   border: 5px solid rgb(8, 135, 255);
   width: fit-content;
   font-size: 60px;
 }
-.social{
+
+.social {
   position: absolute;
   display: flex;
   bottom: 0px;
@@ -720,34 +800,38 @@ background-color: rgb(8, 135, 255);}
   padding-bottom: 20px;
   flex-direction: column;
 }
-.conta
-{
-    font-size: 1.4rem;
+
+.conta {
+  font-size: 1.4rem;
 }
-.conta a
-{
-    text-decoration: none;
-    padding: 0px 2px;
- 
+
+.conta a {
+  text-decoration: none;
+  padding: 0px 2px;
+
 }
-.social h1{
+
+.social h3 {
   border: none;
   font-size: 30px;
   margin: 0px;
+  color: aliceblue;
+  font-weight: 700 !important;
   margin-bottom: 12px;
   text-align: left;
   padding-bottom: 5px;
   width: 100%;
-  border-bottom:2px solid  rgb(27, 110, 244);
+  border-bottom: 2px solid rgb(27, 110, 244);
 }
-.fa:hover
-{
-    
-    transform: scale(1.2);
-   
+
+.fa:hover {
+
+  transform: scale(1.2);
+
 }
+
 .fa {
-    padding: 1rem;
+  padding: 1rem;
   font-size: 2rem;
   width: 1.3rem;
   text-align: center;
@@ -755,58 +839,63 @@ background-color: rgb(8, 135, 255);}
   border-radius: 50%;
   transition: transform 0.4s;
 }
-   
-.fa-github
-{
-    background-color: black;
-    color: white;
+
+.fa-github {
+  background-color: black;
+  color: white;
 }
+
 .fa-stack-overflow {
-    background: #ff6600;
-    color: white;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  .fa-instagram {
-    background: #125688;
-    color: white;
+  background: #ff6600;
+  color: white;
 }
-  .fa-yahoo {
-    background: #430297;
-    color: white;
-  }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
 .fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .fa-skype {
-    background: #00aff0;
-    color: white;
-  }
+  background: #00aff0;
+  color: white;
+}
 
 
 @media screen and (max-width:1050px) {
   .authmodal-inner-cont {
     width: 70vw;
-      }
+  }
 
   .Search-container h1 {
     margin: 0 0 1rem;
@@ -845,11 +934,13 @@ background-color: rgb(8, 135, 255);}
   .fourth-container,
   .fifth-container,
   .footer,
-  .frequent-container,.container-protection {
+  .frequent-container,
+  .container-protection {
     flex-direction: column;
     height: auto;
   }
-  .container-protection{
+
+  .container-protection {
 
     flex-direction: column-reverse;
   }
@@ -887,7 +978,8 @@ background-color: rgb(8, 135, 255);}
     padding: 0% 10%;
     font-size: 40px;
   }
-  .nav-div{
+
+  .nav-div {
     font-size: 15px;
   }
 
@@ -902,10 +994,12 @@ background-color: rgb(8, 135, 255);}
   .Email-input {
     width: auto;
   }
-  .form-infoo{
+
+  .form-infoo {
     width: 80%;
   }
-  .form-infoo h2{
+
+  .form-infoo h2 {
     margin-top: 30px;
     font-size: 30px;
     text-align: center;
@@ -915,25 +1009,29 @@ background-color: rgb(8, 135, 255);}
     width: 90%;
 
   }
+
   .authmodal-inner-cont {
-width: 90vw;
+    width: 90vw;
   }
 
   .pair-cont {
     width: 90%;
   }
 }
+
 @media screen and (max-width:545px) {
-.nav-div{
-  font-size: 9px;
-}
-.Search-container h1{
-  font-size: 20px;
-  padding: 5px 0px;
-border: 2px solid rgb(27, 110, 244);
-}
-.social h1 {
-  margin: 0 0 1rem;
+  .nav-div {
+    font-size: 9px;
+  }
+
+  .Search-container h1 {
+    font-size: 20px;
+    padding: 5px 0px;
+    border: 2px solid rgb(27, 110, 244);
+  }
+
+  .social h3 {
+    margin: 0 0 1rem;
     text-align: center;
     width: 60%;
     padding: 0% 10%;
@@ -941,18 +1039,22 @@ border: 2px solid rgb(27, 110, 244);
     border: none;
     text-align: left;
     border-bottom: 1px solid rgb(27, 110, 244);
-}
-.social{
-  padding: 0% 10% 0% 0%;
-  margin-bottom: 10px;
-}
-.fa{
-  padding: 0.5rem;
-}
-.video-container h1 {
-  font-size: 1rem;
-}
-.Auth-container .headder h1{
-  font-size: 30px;
-}
+  }
+
+  .social {
+    padding: 0% 10% 0% 0%;
+    margin-bottom: 10px;
+  }
+
+  .fa {
+    padding: 0.5rem;
+  }
+
+  .video-container h1 {
+    font-size: 1rem;
+  }
+
+  .Auth-container .headder h1 {
+    font-size: 30px;
+  }
 }
