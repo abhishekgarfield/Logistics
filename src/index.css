@@ -442,7 +442,6 @@ video {
 }
 
 .second-img {
-  height: 0%;
   overflow: hidden;
   transition: 0.7s all;
   transition-delay: 0.2s;
@@ -756,6 +755,11 @@ li {
   top: 30px;
   left: 50px;
 }
+.nav-div a{
+  text-decoration: none;
+  color: inherit;
+
+}
 
 .submit-container {
   display: flex;
@@ -923,6 +927,12 @@ li {
     padding: 0% 2%;
     width: 96%;
   }
+  .coreValues{
+    margin-bottom: 9rem;
+  }
+  .Search-container h1 {
+    margin-top: 5rem;
+  }
 
 }
 
@@ -977,6 +987,10 @@ li {
     width: 80%;
     padding: 0% 10%;
     font-size: 40px;
+    
+  }
+  .Search-container h1 {
+    margin-top: 5rem;
   }
 
   .nav-div {
@@ -1017,6 +1031,9 @@ li {
   .pair-cont {
     width: 90%;
   }
+  .coreValues{
+    margin-bottom: 9rem;
+  }
 }
 
 @media screen and (max-width:545px) {
@@ -1029,6 +1046,13 @@ li {
     padding: 5px 0px;
     border: 2px solid rgb(27, 110, 244);
   }
+  .coreValues{
+    display: none;
+  }
+  .Search-container h1{
+    margin: 7rem 0rem 7rem 0rem;
+  }
+ 
 
   .social h3 {
     margin: 0 0 1rem;

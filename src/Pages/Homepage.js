@@ -4,45 +4,45 @@ import Frequent from "../Components/Frequent";
 import { useState } from "react";
 
 const Homepage = () => {
-  window.addEventListener("scroll",()=>{
-reveal();
-  })
-  const reveal=()=>{
-    var el=document.querySelectorAll(".second-img");
-    var header=document.querySelectorAll("h1");
-    for(var i=0;i<el.length;i++)
-    {
-      var elementTop=el[i].getBoundingClientRect().top; 
-      var windowHeight=window.innerHeight;
-      var visible=150;
+  window.addEventListener("scroll", () => {
+    reveal();
+  });
+  const reveal = () => {
+    var el = document.querySelectorAll(".second-img");
+    var header = document.querySelectorAll("h1");
+    var corevalues1 = document.querySelector(".corevalues-row1");
+    var corevalues2 = document.querySelector(".corevalues-row2");
+    for (var i = 0; i < el.length; i++) {
+      var elementTop = el[i].getBoundingClientRect().top;
+      var windowHeight = window.innerHeight;
+      var visible = 150;
       console.log(`${windowHeight}: windowheight`);
-    console.log(`${elementTop}: elementTop`);
-    console.log(`${visible} visible`); 
-    if(elementTop<windowHeight-visible)
-    {
-      el[i].style.flexBasis="50%";
-    }else{
-      el[i].style.flexBasis="0%";
+      console.log(`${elementTop}: elementTop`);
+      console.log(`${visible} visible`);
+      if (elementTop < windowHeight - visible) {
+        el[i].style.flexBasis = "50%";
+      } else {
+        el[i].style.flexBasis = "0%";
+      }
     }
-      
-    }
-    for(var i=0;i<header.length;i++)
-    {
-      var elementTop=header[i].getBoundingClientRect().top; 
-      var windowHeight=window.innerHeight;
-      var visible=150;
+    for (var i = 0; i < header.length; i++) {
+      var elementTop = header[i].getBoundingClientRect().top;
+      var windowHeight = window.innerHeight;
+      var visible = 150;
       console.log(`${windowHeight}: windowheight`);
-    console.log(`${elementTop}: elementTop`);
-    console.log(`${visible} visible`); 
-    if(elementTop<windowHeight-visible)
-    {
-      header[i].style.opacity=1;
-    }else{
-      header[i].style.opacity=0;
+      console.log(`${elementTop}: elementTop`);
+      console.log(`${visible} visible`);
+      if (elementTop < windowHeight - visible) {
+        header[i].style.opacity = 1;
+        corevalues1.style.transform = "translateX(0%)";
+        corevalues1.style.visibility = "visible";
+        corevalues2.style.visibility = "visible";
+        corevalues2.style.transform = "translateX(0%)";
+      } else {
+        header[i].style.opacity = 0;
+      }
     }
-      
-    }
-  }
+  };
   const [outplut, setOutput] = useState(null);
   const [user, setUser] = useState({
     Name: "",
@@ -76,8 +76,56 @@ reveal();
         <div className="First-Container">
           <div className="Search-container">
             <h1>Orchestrating every element of supply chain and mobility</h1>
+
+            <div className="coreValues">
+              <h3>Our vision</h3>
+              <div className="core-values">
+                <div className="corevalues-row1">
+                  <p>
+                    In a way, that is what we essentially do. We believe that
+                    the success of a company lies in the success of its
+                    employees. We focus on Igniting Success for our employees by
+                    empowering them to deliver, be customer centric, build their
+                    capabilities & skillsets and develop a growth mindset.
+                  </p>
+                  <p>
+                    ‘Collective Growing’ - these words aptly define our approach
+                    for Igniting Success for our partners. Our partners are the
+                    backbone of our company. They are a very critical
+                    stakeholder for us, and we strive to grow them through
+                    various developmental initiatives and collaborative
+                    opportunities.
+                  </p>
+                  <p>
+                    We simplify the complexity of delivering excellence and
+                    promises on-time, every time. Our solutions are tailor-made
+                    to meet the unique needs of our supply chain and people
+                    mobility customers.
+                  </p>
+                </div>
+
+                <div className="corevalues-row2">
+                  <p>
+                    We ensure optimum productivity and high performance with our
+                    operational excellence capabilities. Our tech-integrated and
+                    automated operations give complete visibility to our
+                    customers. Our advanced data analytics significantly enable
+                    effective decision making. Our diverse industry expertise
+                    and pan-India presence ensure maximum scalability. Our focus
+                    on sustainable operations in transportation, warehousing as
+                    well as in people mobility supports our goal of being carbon
+                    neutral by 2040 and building a better tomorrow. Our
+                    ‘Customer First’ approach helps us weave the strands of
+                    trust, transparency, safety, and flexibility that ensures
+                    efficiency in all our operations. We orchestrate every
+                    element, enabling our customers to be in control of their
+                    supply chain, Igniting Success.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="social">
-              <h1>Our socials</h1>
+              <h3>Our socials</h3>
               <div class="conta">
                 <a
                   href="https://www.instagram.com/garfield_abhishek/"
@@ -133,7 +181,7 @@ reveal();
           </div>
         </div>
         <hr />
-        <div className="headder">
+        <div className="headder" id="services">
           <h1>Our services</h1>
         </div>
         <div className="Second-container">

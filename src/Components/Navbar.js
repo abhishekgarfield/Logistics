@@ -45,7 +45,7 @@ const Navbar = () => {
               className="nav-div"
               
             >
-              Services
+             <a href="#services"> Services</a>
             </div>
             <div
               className="nav-div"
@@ -53,7 +53,7 @@ const Navbar = () => {
             >
               Investor relations
             </div>
-            <div className="nav-div">Carrers</div>
+            <div className="nav-div">Careers</div>
           </div>
           <div className="nav-right"></div>
         </div>
