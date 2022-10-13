@@ -4,6 +4,45 @@ import Frequent from "../Components/Frequent";
 import { useState } from "react";
 
 const Homepage = () => {
+  window.addEventListener("scroll",()=>{
+reveal();
+  })
+  const reveal=()=>{
+    var el=document.querySelectorAll(".second-img");
+    var header=document.querySelectorAll("h1");
+    for(var i=0;i<el.length;i++)
+    {
+      var elementTop=el[i].getBoundingClientRect().top; 
+      var windowHeight=window.innerHeight;
+      var visible=150;
+      console.log(`${windowHeight}: windowheight`);
+    console.log(`${elementTop}: elementTop`);
+    console.log(`${visible} visible`); 
+    if(elementTop<windowHeight-visible)
+    {
+      el[i].style.flexBasis="50%";
+    }else{
+      el[i].style.flexBasis="0%";
+    }
+      
+    }
+    for(var i=0;i<header.length;i++)
+    {
+      var elementTop=header[i].getBoundingClientRect().top; 
+      var windowHeight=window.innerHeight;
+      var visible=150;
+      console.log(`${windowHeight}: windowheight`);
+    console.log(`${elementTop}: elementTop`);
+    console.log(`${visible} visible`); 
+    if(elementTop<windowHeight-visible)
+    {
+      header[i].style.opacity=1;
+    }else{
+      header[i].style.opacity=0;
+    }
+      
+    }
+  }
   const [outplut, setOutput] = useState(null);
   const [user, setUser] = useState({
     Name: "",
@@ -38,7 +77,7 @@ const Homepage = () => {
           <div className="Search-container">
             <h1>Orchestrating every element of supply chain and mobility</h1>
             <div class="social">
-                <h1>Our socials</h1>
+              <h1>Our socials</h1>
               <div class="conta">
                 <a
                   href="https://www.instagram.com/garfield_abhishek/"
@@ -145,45 +184,45 @@ const Homepage = () => {
           </div>
         </div>
         <div className="Third-container">
-            <div className="container-protection">
-          <div className="authmodal-inner-cont">
-            <h1>Enquire now ?</h1>
-            <input
-              type="text"
-              placeholder="Name"
-              value={user.email}
-              name="email"
-              onChange={(e) => handleChange(e)}
-            />
-            <input
-              type="text"
-              placeholder="Email id"
-              value={user.Email_id}
-              name="Email_id"
-              onChange={(e) => handleChange(e)}
-            />
-            <input
-              type="text"
-              placeholder="Mobile no"
-              value={user.Mobile_no}
-              name="Mobile_no"
-              onChange={(e) => handleChange(e)}
-            />
-            <input
-              type="text"
-              placeholder="Comment"
-              value={user.Comment}
-              name="Comment"
-              onChange={(e) => handleChange(e)}
-            />
+          <div className="container-protection">
+            <div className="authmodal-inner-cont">
+              <h1>Enquire now ?</h1>
+              <input
+                type="text"
+                placeholder="Name"
+                value={user.email}
+                name="email"
+                onChange={(e) => handleChange(e)}
+              />
+              <input
+                type="text"
+                placeholder="Email id"
+                value={user.Email_id}
+                name="Email_id"
+                onChange={(e) => handleChange(e)}
+              />
+              <input
+                type="text"
+                placeholder="Mobile no"
+                value={user.Mobile_no}
+                name="Mobile_no"
+                onChange={(e) => handleChange(e)}
+              />
+              <input
+                type="text"
+                placeholder="Comment"
+                value={user.Comment}
+                name="Comment"
+                onChange={(e) => handleChange(e)}
+              />
 
-            <div className="submit-container" onClick={handleSubmit}>
-              <div className="vutton"> Send query</div>
+              <div className="submit-container" onClick={handleSubmit}>
+                <div className="vutton"> Send query</div>
+              </div>
             </div>
-          </div>
-          <div className="form-infoo">
-          <h2>You have doubts feel free to send your query !</h2>
-          </div>
+            <div className="form-infoo">
+              <h2>You have doubts feel free to send your query !</h2>
+            </div>
           </div>
         </div>
         <hr />

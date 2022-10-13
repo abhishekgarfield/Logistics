@@ -12,6 +12,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1{
+  opacity: 0;
+  transition: 0.8s all;
+}
 
 /* --------------- Homepage ---------------*/
 
@@ -274,9 +278,7 @@ cursor: pointer;
   font-weight: 500;
 }
 
-.second-img {
-  flex: 0 0 50%;
-}
+
 
 .image-container {
   position: relative;
@@ -376,9 +378,10 @@ justify-content: center;
 }
 
 .second-img {
-  flex: 0 0 50%;
+  height: 0%;
   overflow: hidden;
-  transition: 0.5s all;
+  transition: 0.7s all;
+  transition-delay: 0.2s;
 }
 .second-img:hover img{
   transform: scale(1.1);
