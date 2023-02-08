@@ -17,7 +17,7 @@ const Homepage = () => {
       var windowHeight = window.innerHeight;
       var visible = 150;
       console.log(`${windowHeight}: windowheight`);
-      console.log(`${elementTop}: elementTop`);
+      console.log(`${elementTop}: elementTop`); 
       console.log(`${visible} visible`);
       if (elementTop < windowHeight - visible) {
         el[i].style.flexBasis = "50%";
